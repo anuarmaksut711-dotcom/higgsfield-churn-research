@@ -1,0 +1,10 @@
+true,adjusted_pred,transition,count,share_of_final_evaluation
+invol_churn,invol_churn,invol_churn -> invol_churn,1827,0.1218
+invol_churn,not_churned,invol_churn -> not_churned,1401,0.0934
+invol_churn,vol_churn,invol_churn -> vol_churn,337,0.022466666666666666
+not_churned,invol_churn,not_churned -> invol_churn,1497,0.0998
+not_churned,not_churned,not_churned -> not_churned,5294,0.3529333333333333
+not_churned,vol_churn,not_churned -> vol_churn,836,0.055733333333333336
+vol_churn,invol_churn,vol_churn -> invol_churn,698,0.046533333333333336
+vol_churn,not_churned,vol_churn -> not_churned,2363,0.15753333333333333
+vol_churn,vol_churn,vol_churn -> vol_churn,747,0.0498

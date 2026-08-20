@@ -1,0 +1,29 @@
+experiment_group,experiment,validation_scope,selection_data,evaluation_data,primary_metric,weighted_f1_mean,weighted_f1_std,macro_f1_mean,status
+baseline,engineered_catboost_adjusted,three strict walk-forward folds,temporal tuning cohorts only,future temporal evaluation cohorts,weighted_f1,0.5141352293948952,0.0172517470514537,0.4718260494946877,selected
+baseline,engineered_catboost_raw,three strict walk-forward folds,temporal tuning cohorts only,future temporal evaluation cohorts,weighted_f1,0.4878309080718961,0.0279742779363269,0.4232089258445584,measured
+baseline,hist_gradient_boosting,three strict walk-forward folds,temporal tuning cohorts only,future temporal evaluation cohorts,weighted_f1,0.482302614689553,0.0283938334127295,0.4183617073202829,measured
+baseline,multinomial_logistic_regression,three strict walk-forward folds,temporal tuning cohorts only,future temporal evaluation cohorts,weighted_f1,0.4779431451898159,0.0200089727858313,0.4118297484740802,measured
+baseline,simple_catboost,three strict walk-forward folds,temporal tuning cohorts only,future temporal evaluation cohorts,weighted_f1,0.4352985811808254,0.0177830435039922,0.3592972224222872,measured
+baseline,dummy_stratified,three strict walk-forward folds,temporal tuning cohorts only,future temporal evaluation cohorts,weighted_f1,0.3785002131520288,0.0007829523582643,0.3376160533071496,measured
+baseline,dummy_most_frequent,three strict walk-forward folds,temporal tuning cohorts only,future temporal evaluation cohorts,weighted_f1,0.3335098337608053,0.009410031154995,0.2222522776352871,measured
+ablation,full_with_decision_adjustment,development folds 1-2,temporal tuning cohorts only,future temporal evaluation cohorts,weighted_f1,0.5163223869587232,0.022846163087021,0.4738638098770744,reference
+ablation,base_plus_transactions,development folds 1-2,temporal tuning cohorts only,future temporal evaluation cohorts,weighted_f1,0.4988264792121047,0.0361257027723274,0.437713445975774,measured
+ablation,full_without_signup_time,development folds 1-2,temporal tuning cohorts only,future temporal evaluation cohorts,weighted_f1,0.4972046516391402,0.0340731706170954,0.4360515503390954,measured
+ablation,full_without_quiz,development folds 1-2,temporal tuning cohorts only,future temporal evaluation cohorts,weighted_f1,0.4971374685103879,0.0335314717546253,0.4361295678460413,quiz value not demonstrated
+ablation,full_raw,development folds 1-2,temporal tuning cohorts only,future temporal evaluation cohorts,weighted_f1,0.4954234157980948,0.0317083506955674,0.4338420949472803,measured
+ablation,full_without_payment,development folds 1-2,temporal tuning cohorts only,future temporal evaluation cohorts,weighted_f1,0.4875125883077202,0.0180641883816119,0.4248613770281535,payment features add predictive value
+ablation,base_plus_cross_ratios,development folds 1-2,temporal tuning cohorts only,future temporal evaluation cohorts,weighted_f1,0.458538993003593,0.0147449652761765,0.3929076904710129,measured
+ablation,base,development folds 1-2,temporal tuning cohorts only,future temporal evaluation cohorts,weighted_f1,0.4557393041555422,0.0151039791536048,0.3898443575924165,measured
+ablation,base_plus_temporal,development folds 1-2,temporal tuning cohorts only,future temporal evaluation cohorts,weighted_f1,0.4541011289601462,0.0180478033321203,0.3870105735597274,measured
+ablation,base_plus_quiz,development folds 1-2,temporal tuning cohorts only,future temporal evaluation cohorts,weighted_f1,0.4486039106382313,0.0008422517079206,0.3803038583993342,measured
+ablation,base_plus_purchases,development folds 1-2,temporal tuning cohorts only,future temporal evaluation cohorts,weighted_f1,0.4476986083732344,0.0237562381756941,0.3791744696462806,measured
+observation_window,14_days,development folds 1-2,temporal tuning cohorts only,future temporal evaluation cohorts,weighted_f1,0.5163223869587232,0.022846163087021,0.4738638098770744,selected production window
+observation_window,7_days,development folds 1-2,temporal tuning cohorts only,future temporal evaluation cohorts,weighted_f1,0.5083091291377418,0.0287415131878841,0.4623054393352502,measured
+observation_window,3_days,development folds 1-2,temporal tuning cohorts only,future temporal evaluation cohorts,weighted_f1,0.5079766273854336,0.0151797772675332,0.4640925549592524,final-fold challenger
+observation_window,1_days,development folds 1-2,temporal tuning cohorts only,future temporal evaluation cohorts,weighted_f1,0.5067604553390571,0.0250798564981561,0.461570367587814,measured
+seed_ensemble,single_seed,development folds 1-2,temporal tuning cohorts only,future temporal evaluation cohorts,weighted_f1,0.5163223869587232,0.022846163087021,0.4738638098770744,selected
+seed_ensemble,three_seed_ensemble,development folds 1-2,temporal tuning cohorts only,future temporal evaluation cohorts,weighted_f1,0.5156867190940426,0.0173404907303939,0.4724986473965449,rejected: no mean gain
+hyperparameter_screen,slower_regularized,development folds 1-2,temporal tuning cohorts only,future temporal evaluation cohorts,weighted_f1,0.5177513598417228,0.021376259213709,0.4742011897504375,rejected: gain below fold variability
+hyperparameter_screen,current,development folds 1-2,temporal tuning cohorts only,future temporal evaluation cohorts,weighted_f1,0.5163223869587232,0.022846163087021,0.4738638098770744,selected for simplicity and stability
+hyperparameter_screen,shallower_depth6,development folds 1-2,temporal tuning cohorts only,future temporal evaluation cohorts,weighted_f1,0.5151651095014529,0.0204255120545326,0.4714764863015112,measured
+hyperparameter_screen,deeper_depth8,development folds 1-2,temporal tuning cohorts only,future temporal evaluation cohorts,weighted_f1,0.515119379012238,0.0164012103620802,0.4725215736722192,measured

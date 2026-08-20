@@ -1,0 +1,10 @@
+class,error_role,count
+not_churned,TP,5294
+not_churned,FP,3764
+not_churned,FN,2333
+vol_churn,TP,747
+vol_churn,FP,1173
+vol_churn,FN,3061
+invol_churn,TP,1827
+invol_churn,FP,2195
+invol_churn,FN,1738

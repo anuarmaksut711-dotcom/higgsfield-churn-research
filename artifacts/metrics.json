@@ -1,0 +1,74 @@
+{
+  "metric": "weighted_f1",
+  "methodology": "train -> temporal tuning -> untouched temporal evaluation",
+  "final_fold": {
+    "name": "fold_3",
+    "train_range": [
+      "1067-08-26 00:00:07+00:00",
+      "1067-10-26 23:56:19+00:00"
+    ],
+    "tuning_range": [
+      "1067-10-27 00:01:34+00:00",
+      "1067-11-03 13:40:09+00:00"
+    ],
+    "evaluation_range": [
+      "1067-11-03 13:40:28+00:00",
+      "1067-11-09 23:59:45+00:00"
+    ],
+    "train_rows": 60000,
+    "tuning_rows": 15000,
+    "evaluation_rows": 15000
+  },
+  "tuning_raw_weighted_f1": 0.4869041999655856,
+  "tuning_adjusted_weighted_f1": 0.5131523157775573,
+  "final_raw_metrics": {
+    "weighted_f1": 0.46737113900669064,
+    "macro_f1": 0.3961195350293361,
+    "accuracy": 0.5446666666666666,
+    "not_churned_precision": 0.5533747412008282,
+    "not_churned_recall": 0.8760980726366855,
+    "not_churned_f1": 0.6783067708862044,
+    "not_churned_support": 7627.0,
+    "vol_churn_precision": 0.45098039215686275,
+    "vol_churn_recall": 0.042279411764705885,
+    "vol_churn_f1": 0.0773109243697479,
+    "vol_churn_support": 3808.0,
+    "invol_churn_precision": 0.5167445482866043,
+    "invol_churn_recall": 0.3722300140252454,
+    "invol_churn_f1": 0.4327409098320561,
+    "invol_churn_support": 3565.0
+  },
+  "final_adjusted_metrics": {
+    "weighted_f1": 0.5068247625800478,
+    "macro_f1": 0.461586873867621,
+    "accuracy": 0.5276666666666666,
+    "not_churned_precision": 0.5760378349973726,
+    "not_churned_recall": 0.7186311787072244,
+    "not_churned_f1": 0.6394819740987049,
+    "not_churned_support": 7627.0,
+    "vol_churn_precision": 0.38213961922030826,
+    "vol_churn_recall": 0.22137605042016806,
+    "vol_churn_f1": 0.2803458596607915,
+    "vol_churn_support": 3808.0,
+    "invol_churn_precision": 0.4852089051540104,
+    "invol_churn_recall": 0.44628330995792426,
+    "invol_churn_f1": 0.46493278784336645,
+    "invol_churn_support": 3565.0
+  },
+  "decision_multipliers": {
+    "not_churned": 1.0,
+    "vol_churn": 1.7999999999999998,
+    "invol_churn": 1.1999999999999997
+  },
+  "evaluation_distribution": {
+    "not_churned": 7627,
+    "vol_churn": 3808,
+    "invol_churn": 3565
+  },
+  "adjusted_prediction_distribution": {
+    "not_churned": 9515,
+    "invol_churn": 3279,
+    "vol_churn": 2206
+  },
+  "probability_calibrated": false
+}

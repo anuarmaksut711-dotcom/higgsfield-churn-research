@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.matplotlib/
+
+# Test-only table has no train counterpart, is unused by the model,
+# and exceeds GitHub's 100 MB per-file limit.
+test/test_users_generations.csv

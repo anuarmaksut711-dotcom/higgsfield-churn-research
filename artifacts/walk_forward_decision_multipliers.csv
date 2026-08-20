@@ -1,0 +1,10 @@
+fold,class,decision_multiplier
+fold_1,not_churned,1.0
+fold_1,vol_churn,2.8999999999999995
+fold_1,invol_churn,1.2999999999999998
+fold_2,not_churned,1.0
+fold_2,vol_churn,1.9999999999999996
+fold_2,invol_churn,1.4
+fold_3,not_churned,1.0
+fold_3,vol_churn,1.6999999999999997
+fold_3,invol_churn,1.4
